@@ -3,8 +3,9 @@ package com.eric.sofa;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ImportResource;
 
-//@ImportResource({"classpath*:service-consumer.xml"})
+@ImportResource({"classpath*:service-consumer.xml"})
 @SpringBootApplication
 public class ServiceConsumerApplication {
 

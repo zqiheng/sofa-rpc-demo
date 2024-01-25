@@ -5,11 +5,9 @@ spring:
   application:
     name: SOFARpc-Provider
 
-com:
-  alipay:
-    sofa:
-      rpc:
-        registry:
-          #address: zookeeper://127.0.0.1:2181
-          address: nacos://127.0.0.1:8848
-
+sofa:
+  boot:
+    rpc:
+      enable-auto-publish: false
+      registry-address: zookeeper://127.0.0.1:2181
+      #address: nacos://127.0.0.1:8848
